@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Page de contact de LAGHA AÏCHA - Ingénieure en Informatique" />
+        <meta name="author" content="LAGHA AÏCHA" />
+        <title>LAGHA AÏCHA - Contact</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Add custom CSS for animations -->
+        <style>
+            /* Add Smooth Transitions */
+            button, a {
+                transition: background-color 0.3s ease, transform 0.3s ease;
+            }
+
+            /* Hover effect for buttons and links */
+            button:hover, a:hover {
+                background-color: #e3eaf1;
+                transform: scale(1.05);
+            }
+
+            /* Fade-in effect */
+            .fade-in {
+                opacity: 0;
+                animation: fadeIn 1s forwards;
+            }
+
+            @keyframes fadeIn {
+                to {
+                    opacity: 1;
+                }
+            }
+
+            /* Hover effect on contact card */
+            .card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            /* Input and textarea focus effect */
+            input:focus, textarea:focus {
+                border-color: #abaeb1;
+                box-shadow: 0 0 5px rgba(35, 108, 185, 0.5);
+                transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            /* Fade-in effect for page load */
+            body {
+                animation: fadeIn 1.5s ease-in-out;
+            }
+
+            /* Ensuring all sections fade in sequentially */
+            .fade-in-up {
+                opacity: 0;
+                animation: fadeInUp 1s forwards;
+            }
+
+            @keyframes fadeInUp {
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        </style>
+    </head>
+    <body class="d-flex flex-column">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">LAGHA AÏCHA</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resume.html">CV</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page content-->
+            <section class="py-5">
+                <div class="container px-5">
+                    <!-- Contact form-->
+                    <div class="bg-light rounded-4 py-5 px-4 px-md-5 fade-in-up">
+                        <div class="text-center mb-5">
+                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <h1 class="fw-bolder">Contactez-moi</h1>
+                            <p class="lead fw-normal text-muted mb-0">Travaillons ensemble !</p>
+                        </div>
+                        <div class="row gx-5 justify-content-center">
+                            <!-- Formulaire de contact -->
+                            <div class="col-lg-8 col-xl-6 fade-in-up">
+                                <form id="contactForm" action="https://formspree.io/f/mwplevzd" method="POST">
+                                    <!-- Nom complet -->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="name" type="text" name="name" placeholder="Votre nom" required>
+                                        <label for="name">Nom complet</label>
+                                    </div>
+                                    <!-- Adresse email -->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="email" type="email" name="_replyto" placeholder="name@example.com" required>
+                                        <label for="email">Adresse email</label>
+                                    </div>
+                                    <!-- Message -->
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" id="message" name="message" style="height: 10rem" placeholder="Votre message" required></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                    <!-- Bouton de soumission -->
+                                    <div class="d-grid">
+                                        <button class="btn btn-primary btn-lg" type="submit">Envoyer</button>
+                                    </div>
+                                </form>
+                            </div>
+                            
+                            <!-- Coordonnées -->
+                            <div class="col-lg-4 col-xl-4 mt-5 mt-lg-0 fade-in-up">
+                                <div class="card border-0 shadow">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-4">Coordonnées</h5>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-3">
+                                                <i class="bi bi-github me-2"></i>
+                                                <a href="https://github.com/AychaLagha" target="_blank" class="text-decoration-none">GitHub</a>
+                                            </li>
+                                            <li class="mb-3">
+                                                <i class="bi bi-envelope me-2"></i>
+                                                <a href="mailto:ayshalagha5@gmail.com" class="text-decoration-none">ayshalagha5@gmail.com</a>
+                                            </li>
+                                            <li class="mb-3">
+                                                <i class="bi bi-linkedin me-2"></i>
+                                                <a href="https://www.linkedin.com/in/aysha-lagha-4553a91bb/" target="_blank" class="text-decoration-none">LinkedIn</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto">
+                        <div class="small m-0">Copyright &copy; LAGHA AÏCHA 2023</div>
+                    </div>
+                    <div class="col-auto">
+                        <a class="small" href="#!">Confidentialité</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Conditions</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- Gestion AJAX du formulaire -->
+        <script>
+            document.getElementById("contactForm").addEventListener("submit", function(e) {
+                e.preventDefault(); // Empêche le rechargement de la page
+                var formData = new FormData(this);
+
+                fetch(this.action, {
+                    method: "POST",
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                }).then(response => {
+                    if (response.ok) {
+                        alert("Merci ! Votre message a été envoyé.");
+                        this.reset();
+                    } else {
+                        response.json().then(data => {
+                            if (data.errors) {
+                                alert(data.errors.map(error => error.message).join(", "));
+                            } else {
+                                alert("Une erreur est survenue lors de l'envoi du formulaire.");
+                            }
+                        });
+                    }
+                }).catch(error => {
+                    alert("Une erreur est survenue lors de l'envoi du formulaire.");
+                });
+            });
+        </script>
+    </body>
+</html>
